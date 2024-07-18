@@ -1,0 +1,12 @@
+file_format: "1"
+id: shweep
+name: Shweep
+type: shield
+url: https://github.com/brendan-myers/shweep-shield-module
+requires: [xiao]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - shweep_left
+  - shweep_right
