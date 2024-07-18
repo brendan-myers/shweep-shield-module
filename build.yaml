@@ -17,3 +17,8 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
+include:
+  - board: seeeduino_xiao_ble
+    shield: shweep_left
+  - board: seeeduino_xiao_ble
+    shield: shweep_right
