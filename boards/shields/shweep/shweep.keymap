@@ -18,11 +18,11 @@
     &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                          &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B                          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B                          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
-                                           &kp LGUI                                           &kp DEL
-					       &kp RET                                    &kp SPACE 
-					           &kp ESC                            &kp RET   
-						       &kp SPACE                  &kp TAB   
-							   &kp BSPC           &kp RALT
+                                           &kp N1                                           &kp DEL
+					                         &kp N2                                        &kp SPACE 
+					                           &kp N3                                    &kp RET   
+						                         &kp N4                              &kp TAB   
+							                       &kp N5                           &kp RALT
             >;
         };
     };
