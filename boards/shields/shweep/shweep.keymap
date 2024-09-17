@@ -21,8 +21,8 @@
                                            &kp LEFT_CONTROL                                   &kp DEL
 					                         &kp LEFT_ALT                                   &kp SPACE 
 					                           &kp LEFT_COMMAND                           &kp RET   
-						                         &kp SPACE                              &kp TAB   
-							                       &mo 1                              &mo 2
+						                         &kp SPACE                              &kp TAB 
+							                       &mo 2                              &mo 1 // swap these later
             >;
         };
 
