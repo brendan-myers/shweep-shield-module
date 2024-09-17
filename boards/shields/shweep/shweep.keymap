@@ -53,8 +53,8 @@
 // |         |         |         |         |         |         |                                          |         |         |         |         |         |         |
 // |         |         |         |         |         |         |                                          |         |         |         |         |         |         |
 //                               |         |         |         |         |         |  |         |         |         |         |         |
-    &kp BT_CLR  &kp BT_SEL 0   &kp BT_SEL 1   &kp BT_SEL 2    &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
-    &trans      &kp BT_DISC 0  &kp BT_DISC 1  &kp BT_DISC 2   &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
+    &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
+    &trans      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
     &trans      &trans         &trans         &trans          &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
     &trans      &trans         &trans         &trans          &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
                                               &trans                                                            &trans
