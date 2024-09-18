@@ -22,3 +22,5 @@ include:
     shield: shweep_left
   - board: seeeduino_xiao_ble
     shield: shweep_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
