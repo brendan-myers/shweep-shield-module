@@ -9,20 +9,20 @@
 
         default_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    ~`   |    1    |    2    |    3    |    4    |    5    |                                          |    6    |    7    |    8    |    9    |    0    |  BCKSPC |
-// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+// |   ESC   |    1    |    2    |    3    |    4    |    5    |                                          |    6    |    7    |    8    |    9    |    0    |  BCKSPC |
+// |    ~`   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
 // |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |                                          |    N    |    M    |    ,    |    .    |    /    |  SHIFT  |
 //                               |  L CTL  |  L ALT  |  L CMD  |  SPACE  |   L1    |  |    L2   |   TAB   | RETURN  |   BSPC  |  R ALT  |
             bindings = <
-    &bt BT_CLR_ALL  &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp BACKSPACE // make the first one &kp GRAVE
-    &kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
+    &bt ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp BACKSPACE // make the first one &kp GRAVE
+    &kp GRAVE  &kp Q    &kp W    &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
     &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                          &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B                          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHIFT
                                            &kp LEFT_CONTROL                                   &kp DEL
-					                         &kp LEFT_ALT                                   &kp SPACE 
-					                           &kp LEFT_COMMAND                           &kp RET   
-						                         &kp SPACE                              &kp TAB 
+					                         &kp LEFT_ALT                                   &kp RIGHT_ALT 
+					                           &kp LEFT_COMMAND                           &kp RIGHT_COMMAND   
+						                         &kp SPACE                              &kp RET 
 							                       &mo 2                              &mo 1 // swap these later
             >;
         };
@@ -31,14 +31,14 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |         |   F1    |   F2    |   F3    |   F4    |   F5    |                                          |   F6    |   F7    |   F8    |   F9    |   F10   |   DEL   |
 // |         |         |         |         |         |         |                                          |         |         |   UP    |         |    {    |    }    |
-// |         |         |         |         |         |         |                                          |         |  LEFT   |  DOWN   |  RIGHT  |         |         |
+// |         |         |         |         |         |         |                                          |         |  LEFT   |  DOWN   |  RIGHT  |    -    |    +    |
 // |         |         |         |         |         |         |                                          |         |         |         |         |         |         |
 //                               |         |         |         |         |         |  |         |         |         |         |         |
         bindings = <
-    &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp F6   &kp F7    &kp F8    &kp F9    &kp F10  &kp DELETE 
-    &trans   &trans   &trans   &trans   &trans   &trans                         &trans   &trans    &kp UP    &trans    &kp LBKT &kp RBKT
-    &trans   &trans   &trans   &trans   &trans   &trans                         &trans   &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
-    &trans   &trans   &trans   &trans   &trans   &trans                         &trans   &trans    &trans    &trans    &trans   &trans
+    &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp F6   &kp F7    &kp F8    &kp F9    &kp F10   &kp DELETE 
+    &trans   &trans   &trans   &trans   &trans   &trans                         &trans   &trans    &kp UP    &trans    &kp LBKT  &kp RBKT
+    &trans   &trans   &trans   &trans   &trans   &trans                         &trans   &kp LEFT  &kp DOWN  &kp RIGHT &kp MINUS &kp EQUAL
+    &trans   &trans   &trans   &trans   &trans   &trans                         &trans   &trans    &trans    &trans    &trans    &trans
                                         &trans                                           &trans
 					                      &trans                                       &trans
 					                        &trans                                   &trans
@@ -50,15 +50,15 @@
         bt_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |  BT CLR | BT C 0  | BT C 1  | BT C 2  |         |         |                                          |         |         |         |         |         |         |
-// | OUT_USB | BT D 0  | BT D 1  | BT D 2  |         |         |                                          |         |         |         |         |         |         |
-// | OUT_BLE |         |         |         |         |         |                                          |         |         |         |         |         |         |
-// | OUT_TOG |         |         |         |         |         |                                          |         |         |         |         |         |         |
+// | OUT_USB | BT D 0  | BT D 1  | BT D 2  |         |         |                                          |         |  VOL_UP |         |         |         |         |
+// | OUT_BLE |         |         |         |         |         |                                          |         |  VOL_DN |         |         |         |         |
+// | OUT_TOG |         |         |         |         |         |                                          |         |   MUTE  |         |         |         |         |
 //                               |         |         |         |         |         |  |         |         |         |         |         |
         bindings = <
-    &bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
-    &out OUT_USB    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
-    &out OUT_BLE    &trans         &trans         &trans          &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
-    &out OUT_TOG    &trans         &trans         &trans          &trans   &trans                          &trans   &trans   &trans   &trans   &trans   &trans
+    &bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &trans   &trans                          &trans   &trans     &trans   &trans   &trans   &trans
+    &out OUT_USB    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &trans   &trans                          &trans   &C_VOL_UP  &trans   &trans   &trans   &trans
+    &out OUT_BLE    &trans         &trans         &trans          &trans   &trans                          &trans   &C_VOL_DN  &trans   &trans   &trans   &trans
+    &out OUT_TOG    &trans         &trans         &trans          &trans   &trans                          &trans   &C_MUTE    &trans   &trans   &trans   &trans
                                               &trans                                                            &trans
 					                            &trans                                                        &trans
 					                              &trans                                                    &trans
