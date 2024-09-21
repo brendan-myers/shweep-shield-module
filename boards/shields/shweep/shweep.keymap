@@ -19,7 +19,7 @@
     &kp GRAVE  &kp Q    &kp W    &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
     &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                          &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B                          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHIFT
-                                           &kp LEFT_CONTROL                                   &kp DEL
+                                           &kp LEFT_CONTROL                                   &kp DELETE
 					                         &kp LEFT_ALT                                   &kp RIGHT_ALT 
 					                           &kp LEFT_COMMAND                           &kp RIGHT_COMMAND   
 						                         &kp SPACE                              &kp RET 
@@ -55,10 +55,10 @@
 // | OUT_TOG |         |         |         |         |         |                                          |         |   MUTE  |         |         |         |         |
 //                               |         |         |         |         |         |  |         |         |         |         |         |
         bindings = <
-    &bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &trans   &trans                          &trans   &trans  &trans   &trans   &trans   &trans
-    &out OUT_USB    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &trans   &trans                          &trans   &trans  &trans   &trans   &trans   &trans
-    &out OUT_BLE    &trans         &trans         &trans          &trans   &trans                          &trans   &trans  &trans   &trans   &trans   &trans
-    &out OUT_TOG    &trans         &trans         &trans          &trans   &trans                          &trans   &trans  &trans   &trans   &trans   &trans
+    &bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &trans   &trans                          &trans   &trans        &trans   &trans   &trans   &trans
+    &out OUT_USB    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &trans   &trans                          &trans   &kp C_VOL_UP  &trans   &trans   &trans   &trans
+    &out OUT_BLE    &trans         &trans         &trans          &trans   &trans                          &trans   &kp C_VOL_DN  &trans   &trans   &trans   &trans
+    &out OUT_TOG    &trans         &trans         &trans          &trans   &trans                          &trans   &kp C_MUTE    &trans   &trans   &trans   &trans
                                               &trans                                                            &trans
 					                            &trans                                                        &trans
 					                              &trans                                                    &trans
