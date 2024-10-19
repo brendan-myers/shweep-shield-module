@@ -15,7 +15,7 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |                                          |    N    |    M    |    ,    |    .    |    /    |  SHIFT  |
 //                               |  L CTL  |  L ALT  |  L CMD  |  SPACE  |   L1    |  |    L2   |   TAB   | RETURN  |   BSPC  |  R ALT  |
             bindings = <
-    &kp ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp BACKSPACE // make the first one &kp GRAVE
+    &kp ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &kp BACKSPACE
     &kp GRAVE  &kp Q    &kp W    &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
     &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                          &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B                          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHIFT
@@ -23,7 +23,7 @@
 					                         &kp LEFT_ALT                                   &kp RIGHT_ALT 
 					                           &kp LEFT_COMMAND                           &kp RIGHT_COMMAND   
 						                         &kp SPACE                              &kp RET 
-							                       &mo 2                              &mo 1 // swap these later
+							                       &mo 1                              &mo 2
             >;
         };
 
