@@ -22,7 +22,7 @@
                                            &kp LEFT_CONTROL                                   &kp DELETE
 					                         &kp LEFT_ALT                                   &kp RIGHT_ALT 
 					                           &kp LEFT_COMMAND                           &kp RIGHT_COMMAND   
-						                         &kp SPACE                              &kp RET 
+						                         &kp RET                                &kp SPACE 
 							                       &mo 1                              &mo 2
             >;
         };
